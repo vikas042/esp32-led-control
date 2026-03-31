@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AI LED Control</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- MQTT Library -->
+  <script src="https://unpkg.com/mqtt/dist/mqtt.min.js"></script>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Control Panel</h1>
+
+    <div class="card">
+      <p class="title">LED Controller</p>
+
+      <div class="buttons">
+        <button class="on-btn" onclick="turnOn()">ON</button>
+        <button class="off-btn" onclick="turnOff()">OFF</button>
+      </div>
+
+      <p id="status">Status: OFF</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
